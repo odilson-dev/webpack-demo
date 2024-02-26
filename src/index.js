@@ -1,7 +1,8 @@
 import _ from "lodash";
+import Notes from "./data.csv";
+import Data from "./data.xml";
 import Icon from "./icon.png";
 import "./style.css";
-
 // import your function
 import myName from "./myName";
 
@@ -17,6 +18,8 @@ function component() {
   myIcon.src = Icon;
 
   element.appendChild(myIcon);
+  console.log(Data);
+  console.log(Notes);
 
   return element;
 }
